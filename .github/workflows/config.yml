@@ -1,0 +1,59 @@
+name: UI Tests
+
+on: workflow_dispatch
+
+jobs:
+  ui-tests:
+    runs-on: ubuntu-22.04
+
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Checkout (copy) gh-pages repository to GitHub runner
+        uses: actions/checkout@v5
+        with:
+          ref: gh-pages
+          path: ./.github/gh-pages
+
+      - name: Run UI-tests via docker-compose
+        env:
+          EMAIL: ${{ secrets.EMAIL }}
+          PASSWORD: ${{ secrets.PASSWORD }}
+        run: |
+          docker compose up --build --exit-code-from regression || true
+
+      
+      - name: Copy history from gh-pages to allure-results
+        run: |
+          sudo mkdir -p allure-results
+          sudo chown -R "$(id -u):$(id -g)" allure-results
+          mkdir -p allure-results/history
+
+          if [ -d .github/gh-pages/history ]; then
+            cp -R .github/gh-pages/history/. allure-results/history/
+          else
+            echo "First run: no previous Allure history. Skipping copy."
+          fi
+
+
+      - name: Generate Allure report
+        run: |
+          sudo docker compose run regression /bin/sh -c "allure generate allure-results --clean -o allure-report"
+
+      - name: Update Allure history
+        run: |
+          mkdir -p .github/gh-pages/history
+
+          if [ -d allure-report/history ]; then
+            cp -R allure-report/history/. .github/gh-pages/history/
+          else
+            echo "No Allure history generated yet. Skipping copy."
+          fi
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4.9.0
+        with:
+          token: ${{ secrets.CI_TOKEN }}
+          branch: gh-pages
+          folder: allure-report
+          clean: true

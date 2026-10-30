@@ -1,0 +1,11 @@
+.pytest_cache
+__pycache__
+venv
+.idea
+*.iml
+.env
+.vscode/
+report
+allure-results
+downloads/*
+!downloads/.gitkeep
