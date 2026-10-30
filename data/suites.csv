@@ -1,148 +1,148 @@
 "DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
 "
+    This test verifies that a user cannot proceed with registration
+    when the name field is left empty and that the appropriate
+    name validation message is displayed.
+    ","2393","T10: Signup with empty name field.","tests","2026-10-30","passed","2026-10-30","TestSignup","signup_test","",""
+"
+    This test verifies that a user can select a product category
+    and subcategory and that all displayed products belong to
+    the selected category and subcategory.
+    ","6073","T25: Filter products by category and subcategory.","tests","2026-10-30","passed","2026-10-30","TestSearchFilter","search_and_filter_test","",""
+"
+    This test verifies that a registered user can successfully delete
+    their account and that the account deletion confirmation message
+    is displayed.
+    ","2238","T12: Successful account deletion.","tests","2026-10-30","passed","2026-10-30","TestDeleteAccount","account_management_test","",""
+"
+    This test verifies that a user can remove a product from the cart
+    and that the cart is empty after the product is deleted.
+    ","4692","T19: Delete product from cart.","tests","2026-10-30","passed","2026-10-30","TestCart","cart_test","",""
+"
+    This test verifies that searching for a product that does not exist
+    in the catalog returns no matching products and displays the
+    appropriate no-results state.
+    ","2127","T23: Search for a non-existent product.","tests","2026-10-30","passed","2026-10-30","TestSearchFilter","search_and_filter_test","",""
+"
+    This test verifies that a user cannot log in using a validly formatted
+    email address that is not registered on the website and that an
+    appropriate error message is displayed.
+    ","2852","T02: Login with unregistered email.","tests","2026-10-30","passed","2026-10-30","TestLogin","login_test","",""
+"
+    This test verifies that a user can filter products by a selected brand,
+    that the corresponding brand products page is displayed, and that
+    all displayed products belong to the selected brand.
+    ","5975","T24: Filter products by brand.","tests","2026-10-30","passed","2026-10-30","TestSearchFilter","search_and_filter_test","",""
+"
     This test verifies that after adding a selected product to the cart,
     the product name and price are displayed correctly in the cart.
-    ","3344","T17: Verify product information in cart.","tests","2026-10-30","passed","2026-10-30","TestCart","cart_test","",""
+    ","3127","T17: Verify product information in cart.","tests","2026-10-30","passed","2026-10-30","TestCart","cart_test","",""
+"
+    This test verifies that a logged-in user can complete the purchase
+    flow by adding a product to the cart, proceeding to checkout,
+    providing payment details, and confirming the order successfully.
+    ","11113","T26: Complete purchase flow.","tests","2026-10-30","broken","2026-10-30","TestCheckout","checkout_test","",""
+"
+    This test verifies that a logged-in user can successfully log out
+    and is redirected to the login page.
+    ","1408","T06: Successful logout.","tests","2026-10-30","passed","2026-10-30","TestLogout","logout_test","",""
+"
+    This test verifies that a user can set the desired product quantity
+    before adding the product to the cart and that the selected quantity
+    and total price are displayed correctly in the cart.
+    ","3443","T18: Verify product quantity and total price in cart.","tests","2026-10-30","passed","2026-10-30","TestCart","cart_test","",""
+"
+    This test verifies that a user can subscribe to the newsletter
+    from the cart page by entering a valid email address and that
+    the subscription success message is displayed.
+    ","1248","T31: Verify subscription on the cart page.","tests","2026-10-30","passed","2026-10-30","TestSubscription","subscription_test","",""
+"
+    This test verifies that a user cannot proceed with registration
+    when entering an email address with an invalid format and that
+    the appropriate email validation message is displayed.
+    ","2010","T09: Signup with invalid email format.","tests","2026-10-30","passed","2026-10-30","TestSignup","signup_test","",""
+"
+    This test verifies that a user can submit a review for a selected
+    product by providing their name, email, and review text, and that
+    the review submission confirmation message is displayed.
+    ","2731","T15: Submit a review for a product.","tests","2026-10-30","passed","2026-10-30","TestProducts","products_test","",""
+"
+    This test verifies that a new user cannot create an account
+    using an email address that is already registered and that
+    an appropriate error message is displayed.
+    ","2668","T08: Signup with an existing email.","tests","2026-10-30","passed","2026-10-30","TestSignup","signup_test","",""
+"
+    This test verifies that a user can subscribe to the newsletter
+    from the home page by entering a valid email address and that
+    the subscription success message is displayed.
+    ","1694","T30: Verify subscription on the home page.","tests","2026-10-30","passed","2026-10-30","TestSubscription","subscription_test","",""
+"
+    This test verifies that a user cannot proceed with registration
+    when the email field is left empty and that the appropriate
+    email validation message is displayed.
+    ","1339","T11: Signup with empty email field.","tests","2026-10-30","passed","2026-10-30","TestSignup","signup_test","",""
+"
+    This test verifies that a user can open a product details page
+    for a selected product and that the product name, photo, category,
+    price, and quantity are displayed correctly.
+    ","2046","T14: Verify product details.","tests","2026-10-30","passed","2026-10-30","TestProducts","products_test","",""
+"
+    This test verifies that a user cannot log in using a registered email
+    address and an incorrect password, and that an appropriate error
+    message is displayed.
+    ","3085","T03: Login with incorrect password.","tests","2026-10-30","passed","2026-10-30","TestLogin","login_test","",""
+"
+    This test verifies that a new user can successfully create an account
+    by providing valid registration details and that the account
+    creation confirmation message is displayed.
+    ","5217","T07: Successful signup with valid data.","tests","2026-10-30","passed","2026-10-30","TestSignup","signup_test","",""
+"
+    This test verifies that a user cannot log in when the email field
+    is left empty and that the appropriate validation message is displayed.
+    ","2308","T04: Login with empty email field.","tests","2026-10-30","passed","2026-10-30","TestLogin","login_test","",""
+"
+    This test verifies that a product added to the cart before login
+    remains in the cart after the user logs in, and that the product
+    name and price are displayed correctly.
+    ","5255","T21: Verify cart contents after login.","tests","2026-10-30","passed","2026-10-30","TestCart","cart_test","",""
 "
     This test verifies that a user can submit the contact us form
     by providing their name, email, subject, and message, uploading
     a file, and confirming the submission alert.
     The success confirmation message should be displayed afterward.
-    ","1695","T29: Submit the contact us form.","tests","2026-10-30","passed","2026-10-30","TestContactUs","contact_us_test","",""
-"
-    This test verifies that a user can add a recommended product
-    to the cart from the home page and that the product name and price
-    are displayed correctly in the cart.
-    ","7521","T20: Add recommended product to cart.","tests","2026-10-30","passed","2026-10-30","TestCart","cart_test","",""
-"
-    This test verifies that a user can open a product details page
-    for a selected product and that the product name, photo, category,
-    price, and quantity are displayed correctly.
-    ","2128","T14: Verify product details.","tests","2026-10-30","passed","2026-10-30","TestProducts","products_test","",""
-"
-    This test verifies that a user cannot proceed with registration
-    when entering an email address with an invalid format and that
-    the appropriate email validation message is displayed.
-    ","1197","T09: Signup with invalid email format.","tests","2026-10-30","passed","2026-10-30","TestSignup","signup_test","",""
-"
-    This test verifies that a product added to the cart before login
-    remains in the cart after the user logs in, and that the product
-    name and price are displayed correctly.
-    ","4531","T21: Verify cart contents after login.","tests","2026-10-30","passed","2026-10-30","TestCart","cart_test","",""
-"
-    This test verifies that a registered user can successfully delete
-    their account and that the account deletion confirmation message
-    is displayed.
-    ","1449","T12: Successful account deletion.","tests","2026-10-30","passed","2026-10-30","TestDeleteAccount","account_management_test","",""
-"
-    This test verifies that searching for a product that does not exist
-    in the catalog returns no matching products and displays the
-    appropriate no-results state.
-    ","2083","T23: Search for a non-existent product.","tests","2026-10-30","passed","2026-10-30","TestSearchFilter","search_and_filter_test","",""
-"
-    This test verifies that the delivery address displayed during checkout
-    matches the address details provided when the user account was created.
-    ","4105","T27: Verify delivery address details in checkout.","tests","2026-10-30","passed","2026-10-30","TestCheckout","checkout_test","",""
-"
-    This test verifies that a user can subscribe to the newsletter
-    from the cart page by entering a valid email address and that
-    the subscription success message is displayed.
-    ","1502","T31: Verify subscription on the cart page.","tests","2026-10-30","passed","2026-10-30","TestSubscription","subscription_test","",""
-"
-    This test verifies that a user cannot log in when the email field
-    is left empty and that the appropriate validation message is displayed.
-    ","1134","T04: Login with empty email field.","tests","2026-10-30","passed","2026-10-30","TestLogin","login_test","",""
-"
-    This test verifies that a user can set the desired product quantity
-    before adding the product to the cart and that the selected quantity
-    and total price are displayed correctly in the cart.
-    ","3468","T18: Verify product quantity and total price in cart.","tests","2026-10-30","passed","2026-10-30","TestCart","cart_test","",""
+    ","2599","T29: Submit the contact us form.","tests","2026-10-30","passed","2026-10-30","TestContactUs","contact_us_test","",""
 "
     This test verifies that a logged-in user can complete a purchase,
     download the invoice, and verify that the downloaded file contains
     the expected product price.
-    ","6333","T28: Download and verify invoice after purchase.","tests","2026-10-30","passed","2026-10-30","TestCheckout","checkout_test","",""
-"
-    This test verifies that a user can navigate to the products page
-    and that the products are displayed correctly.
-    ","2066","T13: Verify products page is displayed.","tests","2026-10-30","passed","2026-10-30","TestProducts","products_test","",""
-"
-    This test verifies that a user cannot proceed with registration
-    when the name field is left empty and that the appropriate
-    name validation message is displayed.
-    ","1168","T10: Signup with empty name field.","tests","2026-10-30","passed","2026-10-30","TestSignup","signup_test","",""
-"
-    This test verifies that a user cannot proceed with registration
-    when the email field is left empty and that the appropriate
-    email validation message is displayed.
-    ","1101","T11: Signup with empty email field.","tests","2026-10-30","passed","2026-10-30","TestSignup","signup_test","",""
-"
-    This test verifies that a user can subscribe to the newsletter
-    from the home page by entering a valid email address and that
-    the subscription success message is displayed.
-    ","1756","T30: Verify subscription on the home page.","tests","2026-10-30","passed","2026-10-30","TestSubscription","subscription_test","",""
-"
-    This test verifies that a new user cannot create an account
-    using an email address that is already registered and that
-    an appropriate error message is displayed.
-    ","1945","T08: Signup with an existing email.","tests","2026-10-30","passed","2026-10-30","TestSignup","signup_test","",""
-"
-    This test verifies that a user can search for a product by name
-    and that the expected product is displayed in the search results.
-    ","2115","T22: Search product by name.","tests","2026-10-30","passed","2026-10-30","TestSearchFilter","search_and_filter_test","",""
-"
-    This test verifies that a user cannot log in when the password field
-    is left empty and that the appropriate validation message is displayed.
-    ","1652","T05: Login with empty password field.","tests","2026-10-30","passed","2026-10-30","TestLogin","login_test","",""
-"
-    This test verifies that a user can remove a product from the cart
-    and that the cart is empty after the product is deleted.
-    ","3897","T19: Delete product from cart.","tests","2026-10-30","passed","2026-10-30","TestCart","cart_test","",""
-"
-    This test verifies that a registered user can successfully log in
-    using valid email and password credentials.
-    ","3453","T01: Successful login with valid credentials.","tests","2026-10-30","passed","2026-10-30","TestLogin","login_test","",""
-"
-    This test verifies that a user can select a product category
-    and subcategory and that all displayed products belong to
-    the selected category and subcategory.
-    ","14991","T25: Filter products by category and subcategory.","tests","2026-10-30","broken","2026-10-30","TestSearchFilter","search_and_filter_test","",""
-"
-    This test verifies that a logged-in user can complete the purchase
-    flow by adding a product to the cart, proceeding to checkout,
-    providing payment details, and confirming the order successfully.
-    ","6134","T26: Complete purchase flow.","tests","2026-10-30","passed","2026-10-30","TestCheckout","checkout_test","",""
-"
-    This test verifies that a user can submit a review for a selected
-    product by providing their name, email, and review text, and that
-    the review submission confirmation message is displayed.
-    ","2074","T15: Submit a review for a product.","tests","2026-10-30","passed","2026-10-30","TestProducts","products_test","",""
-"
-    This test verifies that a new user can successfully create an account
-    by providing valid registration details and that the account
-    creation confirmation message is displayed.
-    ","4892","T07: Successful signup with valid data.","tests","2026-10-30","passed","2026-10-30","TestSignup","signup_test","",""
-"
-    This test verifies that a user cannot log in using a registered email
-    address and an incorrect password, and that an appropriate error
-    message is displayed.
-    ","1950","T03: Login with incorrect password.","tests","2026-10-30","passed","2026-10-30","TestLogin","login_test","",""
+    ","8424","T28: Download and verify invoice after purchase.","tests","2026-10-30","passed","2026-10-30","TestCheckout","checkout_test","",""
 "
     This test verifies that a user can add a selected product to the cart
     and that the confirmation modal is displayed after the product
     is added successfully.
-    ","3055","T16: Add product to cart and verify confirmation.","tests","2026-10-30","passed","2026-10-30","TestCart","cart_test","",""
+    ","2889","T16: Add product to cart and verify confirmation.","tests","2026-10-30","passed","2026-10-30","TestCart","cart_test","",""
 "
-    This test verifies that a user cannot log in using a validly formatted
-    email address that is not registered on the website and that an
-    appropriate error message is displayed.
-    ","1731","T02: Login with unregistered email.","tests","2026-10-30","passed","2026-10-30","TestLogin","login_test","",""
+    This test verifies that a user can add a recommended product
+    to the cart from the home page and that the product name and price
+    are displayed correctly in the cart.
+    ","7639","T20: Add recommended product to cart.","tests","2026-10-30","passed","2026-10-30","TestCart","cart_test","",""
 "
-    This test verifies that a logged-in user can successfully log out
-    and is redirected to the login page.
-    ","682","T06: Successful logout.","tests","2026-10-30","passed","2026-10-30","TestLogout","logout_test","",""
+    This test verifies that a user cannot log in when the password field
+    is left empty and that the appropriate validation message is displayed.
+    ","2298","T05: Login with empty password field.","tests","2026-10-30","passed","2026-10-30","TestLogin","login_test","",""
 "
-    This test verifies that a user can filter products by a selected brand,
-    that the corresponding brand products page is displayed, and that
-    all displayed products belong to the selected brand.
-    ","4311","T24: Filter products by brand.","tests","2026-10-30","passed","2026-10-30","TestSearchFilter","search_and_filter_test","",""
+    This test verifies that the delivery address displayed during checkout
+    matches the address details provided when the user account was created.
+    ","4709","T27: Verify delivery address details in checkout.","tests","2026-10-30","passed","2026-10-30","TestCheckout","checkout_test","",""
+"
+    This test verifies that a registered user can successfully log in
+    using valid email and password credentials.
+    ","3924","T01: Successful login with valid credentials.","tests","2026-10-30","passed","2026-10-30","TestLogin","login_test","",""
+"
+    This test verifies that a user can search for a product by name
+    and that the expected product is displayed in the search results.
+    ","2468","T22: Search product by name.","tests","2026-10-30","passed","2026-10-30","TestSearchFilter","search_and_filter_test","",""
+"
+    This test verifies that a user can navigate to the products page
+    and that the products are displayed correctly.
+    ","2868","T13: Verify products page is displayed.","tests","2026-10-30","passed","2026-10-30","TestProducts","products_test","",""
