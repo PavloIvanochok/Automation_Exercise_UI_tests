@@ -35,7 +35,6 @@ The complete list of automated tests is available in [tests.md](docs/tests.md).
 - **Page Object Model (POM)** — design pattern for organizing page objects, locators, and interactions
 - **Faker** — dynamic test data generation
 - **Docker** — containerized test execution
-- **Docker Compose** — container orchestration for test execution
 - **GitHub Actions** — CI workflow automation
 
 ## Getting Started
@@ -47,7 +46,7 @@ For local execution, make sure the following tools are installed:
 - Python compatible with the project dependencies
 - Google Chrome
 - Git
-- Allure Commandline (for generating and viewing Allure reports)
+- Allure (for generating and viewing Allure reports)
 
 For Docker execution:
 
@@ -126,7 +125,7 @@ docker compose up --exit-code-from regression
 
 The Allure results are saved in the local `allure-results` directory through the Docker volume configuration.
 
-If your tests require registered user credentials, provide the `EMAIL` and `PASSWORD` environment variables before running Docker Compose.
+Tests require registered user credentials, provide the `EMAIL` and `PASSWORD` environment variables before running Docker Compose.
 ## Allure Reports
 
 Allure provides a detailed overview of test execution, including:
@@ -136,7 +135,7 @@ Allure provides a detailed overview of test execution, including:
 - Test steps
 - Failure details
 
-To generate the report locally, make sure Allure Commandline is installed and available in your system's `PATH`.
+To generate the report locally, make sure Allure is installed and available in your system's `PATH`.
 
 Generate the report:
 
@@ -171,7 +170,3 @@ This project was created to practice and demonstrate Junior QA Automation skills
 - Browser automation and end-to-end user workflows
 - Containerized test execution with Docker
 - CI workflow automation with GitHub Actions
-
-## Application Under Test
-
-[AutomationExercise](https://www.automationexercise.com/)
