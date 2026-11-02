@@ -1,5 +1,5 @@
 
-# Tests
+# Tests for Testing AutomationExercise UI
 
 This document provides an overview of the automated UI tests implemented for the [AutomationExercise](https://www.automationexercise.com/) website using Python, Selenium WebDriver, Pytest, and Allure.
 
@@ -18,7 +18,7 @@ This document provides an overview of the automated UI tests implemented for the
 
 ## Login
 
-| ID | Test Case |
+| ID | Test |
 |---|---|
 | T01 | Login with valid credentials |
 | T02 | Login with unregistered email |
@@ -28,13 +28,13 @@ This document provides an overview of the automated UI tests implemented for the
 
 ## Logout
 
-| ID | Test Case |
+| ID | Test |
 |---|---|
 | T06 | Successful logout |
 
 ## Signup
 
-| ID | Test Case |
+| ID | Test |
 |---|---|
 | T07 | Successful signup with valid data |
 | T08 | Signup with an existing email |
@@ -44,13 +44,13 @@ This document provides an overview of the automated UI tests implemented for the
 
 ## Account Management
 
-| ID | Test Case |
+| ID | Test |
 |---|---|
 | T12 | Successful account deletion |
 
 ## Products
 
-| ID | Test Case |
+| ID | Test |
 |---|---|
 | T13 | Verify products page is displayed |
 | T14 | Verify product details |
@@ -58,7 +58,7 @@ This document provides an overview of the automated UI tests implemented for the
 
 ## Shopping Cart
 
-| ID | Test Case |
+| ID | Test |
 |---|---|
 | T16 | Add product to cart and verify confirmation |
 | T17 | Verify product information in cart |
@@ -69,7 +69,7 @@ This document provides an overview of the automated UI tests implemented for the
 
 ## Search and Filter
 
-| ID | Test Case |
+| ID | Test |
 |---|---|
 | T22 | Search product by name |
 | T23 | Search for a non-existent product |
@@ -78,7 +78,7 @@ This document provides an overview of the automated UI tests implemented for the
 
 ## Checkout and Orders
 
-| ID | Test Case |
+| ID | Test |
 |---|---|
 | T26 | Complete purchase flow |
 | T27 | Verify delivery address details in checkout |
@@ -86,13 +86,13 @@ This document provides an overview of the automated UI tests implemented for the
 
 ## Contact Us
 
-| ID | Test Case |
+| ID | Test |
 |---|---|
 | T29 | Submit the Contact Us form |
 
 ## Subscription
 
-| ID | Test Case |
+| ID | Test |
 |---|---|
 | T30 | Verify subscription on the home page |
 | T31 | Verify subscription on the cart page |
